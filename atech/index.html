@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <title>ATECH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!--CURSORE CUSTOM-->
+    <div class="cursor"></div> 
+    <div class="outline"></div>
+
+    <!--FINE CURSORE CUSTOM-->
+
+
+
+    <!--MAIN-->
+        <section id="home" class="sezione watch">
+            <!--NAVBAR-->
+            <nav>
+                <header>
+        
+                        <div class="menu">
+                            <a href="#home" class="bottone">
+                                <div class="content">
+                                    <i class="fa-sharp fa-solid fa-house" id="uno" ></i>
+                                    <h3 id="unouno" >Home</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a href="#about" class="bottone">
+                                <div class="content">
+                                    <i class="fa-solid fa-people-group" id="due"></i>
+                                    <h3 id="duedue">About</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a href="#servizi" class="bottone">
+                                <div class="content">
+                                    <i class="fa-solid fa-laptop-code" id="tre"></i>
+                                    <h3 id="tretre">Servizi</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a href="#contattaci" class="bottone">
+                                <div class="content">
+                                    <i class="fa-regular fa-message" id="quattro"></i>
+                                    <h3 id="quattroquattro">Contattaci</h3>
+                                </div>
+                            </a>
+                        </div>
+                </header>
+            </nav>
+            <!--FINE NAVBAR-->
+            
+            <div class="titolo">
+                <h1>Ciao, noi siamo <span class="span-atech">Atech</span></h1>
+                <p class="subtitle">Benvenuto nel nostro sito!</p>
+            </div>
+            <div class="consulenza">
+                <a href="#contattaci" class="button">
+                    <span>RICHIEDI UNA CONSULENZA GRATUITA</span>
+                </a>
+            </div>
+            <div class="arrow">
+                <a href="#about">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </section>
+        
+       
+       
+       
+        <section id="about" class="sezione watch">
+            <h1 class="title">Dalla passione per l'informatica alla creazione di una software house 🇮🇹</h1>
+            <div class="panel" ata-aos="zoom-in">
+                <p class="paragrafo">
+                    La nostra software house è specializzata nella creazione di siti web personalizzati che soddisfano perfettamente le esigenze e gli obiettivi dei nostri clienti. Il nostro team di esperti sviluppatori, designer e project manager lavora a stretto contatto con ogni cliente per comprendere la sua visione unica e creare un sito web che non solo sia esteticamente attraente, ma che funzioni in modo <span class="parola-chiave">impeccabile</span>.</br>
+                    Utilizziamo le tecnologie più avanzate e le migliori pratiche del settore per garantire che ogni sito web che creiamo sia <span class="parola-chiave">veloce</span>, <span class="parola-chiave">affidabile</span> e <span class="parola-chiave">facile</span> da utilizzare.</br>
+                    Nella nostra software house siamo impegnati a fornire siti web eccezionali che superino le aspettative dei nostri clienti e li aiutino a raggiungere i loro obiettivi aziendali. Lasciaci realizzare la tua visione del sito web.
+                </p>
+            </div>
+            <div class="lavorare-con-noi">
+                <h2>Perché lavorare con noi?</h2>
+                <div class="panel2">
+                    <div class="work-with-us">
+                        <i class="fa-sharp fa-solid fa-shield"></i>
+                        <h3>Sicurezza</h3>
+                    </div>
+                    <div class="work-with-us">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Velocità</h3>
+                    </div>
+                    <div class="work-with-us">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Tecniche all'avanguardia</h3>
+                    </div>
+                    <div class="work-with-us">
+                        <i class="fa-solid fa-fire"></i>
+                        <h3>Efficienza</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="come_lavoriamo" class="sezione watch">
+            <div class="line"></div>
+            <h1 class="title">COME LAVORIAMO?</h1>
+            <div class="piano-lavorativo">
+                <div class="consulenza-gratuita"></div>
+                .
+            </div>
+        </section>
+        
+        
+        
+        <section id="servizi" class="sezione watch">
+            <h1 class="title">servizi</h1>
+        </section>
+        
+        
+        
+        
+        
+        
+        <section id="contattaci" class="sezione watch">
+            <h1 class="title">contattaci</h1>
+        </section>
+
+    <!--FINE MAIN-->
+
+
+
+    <!--SCRIPT CURSORE-->
+    <script>
+        let outline = document.querySelector('.outline');
+        let cursor = document.querySelector('.cursor');
+        let titoli = document.querySelectorAll('h1');
+
+        document.addEventListener('mousemove', function(e){
+            let x = e.clientX;
+            let y = e.clientY;
+
+            outline.style.transform = `translate( calc(${x}px - 50%), calc(${y}px - 50%) )`;
+            cursor.style.transform = `translate( calc(${x}px - 50%), calc(${y}px - 50%) )`;
+
+            titoli.forEach((titolo) => {
+                titolo.addEventListener("mouseover", function(){
+                    outline.classList.add('hover'); /*aggiungo classe 'hover'*/
+                    cursor.classList.add('hover'); 
+                });
+                titolo.addEventListener("mouseleave", function(){
+                    outline.classList.remove('hover'); /*rimuovo classe 'hover'*/
+                    cursor.classList.remove('hover'); 
+                });
+            });
+        });
+
+    </script>
+    <!--FINE SCRIPT CURSORE-->
+
+
+
+    <!--SCRIPT SCROLL-->
+   <script>
+        var elements_to_watch = document.querySelectorAll('.watch');
+
+        var callback = function(items){
+            items.forEach((item) => {
+                if(item.isIntersecting){
+                    item.target.classList.add("in-page");
+                } else{
+                    item.target.classList.remove("in-page");
+                }
+            });
+        }
+
+        var observer = new IntersectionObserver(callback, { threshold: 0.4 } );  //40%
+
+        elements_to_watch.forEach((element) => {
+            observer.observe(element);
+        })
+   </script>
+   <!-- FINE SCRIPT SCROLL-->
+
+
+
+
+   <!--DATA AOS-->
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--FINE DATA AOS-->
+</body>
+</html>
