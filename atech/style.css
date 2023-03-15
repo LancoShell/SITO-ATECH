@@ -753,7 +753,7 @@ nav{
   }
   
   .contact_us_2 .container-block.form-wrapper {
-    background-color: white;
+    background-color: white; /* carajo se vuoi cambiare il colore del form cambia direttamente qui che ti cambia tutto, baci */
     max-width: 799px;
     text-align: center;
     padding-top: 50px;
